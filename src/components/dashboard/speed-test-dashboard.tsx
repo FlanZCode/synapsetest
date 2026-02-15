@@ -104,6 +104,8 @@ export function SpeedTestDashboard() {
     const ws = new WebSocket("ws://127.0.0.1:9001");
     socketRef.current = ws;
 
+    let messageCount = 0;
+
     ws.onopen = () => {
       ws.send(JSON.stringify({ type: "start", duration }));
     };
@@ -113,9 +115,15 @@ export function SpeedTestDashboard() {
         const message = JSON.parse(event.data);
         if (message.type === "data" && message.data) {
           const newData = message.data as SpeedData;
-          setData(newData);
+
+          messageCount++;
+
+          if(messageCount % 10 === 0) {
+              setData(newData);
+          }
+
           setHistory((prevHistory) => {
-            const newTime = prevHistory.length + 1;
+            const newTime = (prevHistory.length + 1) / 10;
             return [...prevHistory, { ...newData, time: newTime }];
           });
         } else if (message.type === "end") {

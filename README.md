@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">Synapse Test 🧠</h1>
 
-## Getting Started
+**Synapse Test** is a next-generation network diagnostic tool powered by Synapse. Unlike traditional speed tests that only focus on raw throughput, this tool evaluates the true Quality of Experience (QoE).
 
-First, run the development server:
+- 🌀 **Vortex** (Performance): Measures flow efficiency based on speed, latency, jitter, and packet loss.
+- 📡 **Radiance** (Signal): Measures the physical quality of the wireless environment (SNR & Channel Width). (Not done)
+- 🏆 **Axon** (Health): The unified score representing the real-world stability of the connection. (Not done)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Contributing 🤝
+1. Fork the original repository by clicking the “Fork” button at the top right of the repository page.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Clone your fork locally: `git clone https://github.com/FlanZCode/synapsetest.git`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Create a new branch for your changes: `git checkout -b my-new-feature`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Make your changes in the code.
 
-## Learn More
+5. Commit your changes with a clear message: `git commit -m "Description of my changes"`
 
-To learn more about Next.js, take a look at the following resources:
+6. Push your changes to your fork: `git push origin my-new-feature`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+7. Go to your fork’s page on GitHub and click the “New pull request” button.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+8. Describe your changes and submit the pull request.
 
-## Deploy on Vercel
+## Credits 🙏
+<a href="https://github.com/FlanZCode/synapsetest/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=FlanZCode/synapsetest" />
+</a>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License 📕
+This project is licensed under the AGPLv3 License. See the LICENSE file for details.

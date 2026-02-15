@@ -13,10 +13,10 @@ export function VortexGauge({ value, ...props }: VortexGaugeProps) {
     const RADIUS = (SIZE - STROKE_WIDTH) / 2;
     const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
 
-    const progress = value / 100;
+    const progress = value / 500;
     const offset = CIRCUMFERENCE * (1 - progress);
 
-    const normalizedValue = Math.min(Math.max(value, 0), 100) / 100;
+    const normalizedValue = Math.min(Math.max(value, 0), 500) / 500;
     // Higher is better for Vortex score
     const hue = normalizedValue * 120;
     const color = `hsl(${hue}, 90%, 55%)`;
