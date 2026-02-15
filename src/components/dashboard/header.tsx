@@ -6,7 +6,7 @@ export function Header() {
             <div className="container mx-auto flex items-center gap-3">
                 <VortexIcon className="w-8 h-8 text-primary animate-spin-slow" />
                 <h1 className="text-2xl font-headline font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
-                    Vortex Stream
+                    Synapse Test
                 </h1>
             </div>
         </header>
